@@ -1,0 +1,526 @@
+@font-face {
+  font-family: 'IvyMode-Regular';
+  src: url(../font/ivymode/woff2/IvyMode-Regular.woff2) format("woff2"), url(../font/ivymode/woff/IvyMode-Regular.woff) format("woff"), url(../font/ivymode/tff/IvyMode-Regular.ttf) format("truetype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'IvyMode-Bold';
+  src: url(../font/ivymode/woff2/IvyMode-Bold.woff2) format("woff2"), url(../font/ivymode/woff/IvyMode-Bold.woff) format("woff"), url(../font/ivymode/tff/IvyMode-Bold.ttf) format("truetype");
+  font-weight: 800;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 62,5%;
+  font-family: "Lato", sans-serif;
+  background-color: #393B4A;
+}
+
+.philo {
+  margin-top: 8rem;
+  width: 100%;
+  height: 100rem;
+  background: url(../img/bg-3.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+@media screen and (max-width: 900px) {
+  .philo {
+    background: none;
+    margin-top: 12rem;
+  }
+}
+
+.philo-right {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1100px) {
+  .philo-right {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 899px) {
+  .philo-right {
+    height: 35rem;
+  }
+}
+
+@media (max-width: 499px) {
+  .philo-right {
+    height: 60rem;
+  }
+}
+
+.philo-right-img-1 {
+  width: 25rem;
+  position: absolute;
+  top: 26%;
+  left: 9%;
+}
+
+@media (min-width: 1100px) {
+  .philo-right-img-1 {
+    width: 25rem;
+    top: 19%;
+  }
+}
+
+.philo-description {
+  position: absolute;
+  width: 50%;
+  right: 0%;
+  margin-top: 5rem;
+}
+
+@media (min-width: 901px) and (max-width: 1100px) {
+  .philo-description {
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .philo-description {
+    margin: 0;
+    width: 100%;
+    padding: 5rem;
+    left: 0%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .philo-description {
+    padding: 2rem;
+  }
+}
+
+.philo-title {
+  color: #C07D64;
+  font-size: 2rem;
+  font-family: "IvyMode-Regular", sans-serif;
+  letter-spacing: .5rem;
+  text-align: right;
+  padding-right: 4rem;
+}
+
+@media (min-width: 501px) and (max-width: 900px) {
+  .philo-title {
+    font-size: 1.8rem;
+    text-align: left;
+    padding-left: 2rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .philo-title {
+    font-size: 1.5rem;
+    text-align: left;
+  }
+}
+
+.philo-story {
+  font-family: "Lato", sans-serif;
+  color: #EBE4DD;
+  letter-spacing: .2rem;
+  line-height: 3rem;
+  font-size: 1.3rem;
+}
+
+@media (min-width: 901px) and (max-width: 1100px) {
+  .philo-story {
+    line-height: 2.3rem;
+    padding: 2rem;
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 900px) {
+  .philo-story {
+    line-height: 3rem;
+    padding: 2rem;
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .philo-story {
+    line-height: 2.5rem;
+    font-size: 1rem;
+  }
+}
+
+.philo-left {
+  display: flex;
+  height: 100rem;
+  background: none;
+}
+
+@media screen and (max-width: 900px) {
+  .philo-left {
+    background: url(../img/mobile.png);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 900px) {
+  .philo-left {
+    height: 140rem;
+  }
+}
+
+.philo-left-img-2 {
+  position: absolute;
+  top: 65%;
+  left: 10%;
+  width: 25rem;
+}
+
+@media (min-width: 900px) and (max-width: 1100px) {
+  .philo-left-img-2 {
+    width: 20rem;
+    top: 60%;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 900px) {
+  .philo-left-img-2 {
+    top: 103%;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+  .philo-left-img-2 {
+    top: 103%;
+    left: 28%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .philo-left-img-2 {
+    width: 18rem;
+    top: 108%;
+  }
+}
+
+.philo-left-img-3 {
+  width: 25rem;
+  top: 75%;
+  left: 65%;
+  position: absolute;
+}
+
+@media (min-width: 900px) and (max-width: 1100px) {
+  .philo-left-img-3 {
+    width: 18rem;
+    top: 70%;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 900px) {
+  .philo-left-img-3 {
+    top: 135%;
+    left: 10%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .philo-left-img-3 {
+    width: 18rem;
+    top: 140%;
+    left: 12%;
+  }
+}
+
+.philo-left-img-1 {
+  width: 18rem;
+  position: absolute;
+  top: 74%;
+  left: 10%;
+}
+
+@media (min-width: 500px) and (max-width: 899px) {
+  .philo-left-img-1 {
+    width: 24rem;
+    top: 75%;
+    left: 15%;
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .philo-left-img-1 {
+    width: 20rem;
+    top: 79%;
+    left: 13%;
+  }
+}
+
+.nav {
+  position: sticky;
+  top: 0;
+  border-bottom: 1px dashed #C07D64;
+  background-color: #3F4153;
+  z-index: 1000;
+}
+
+.nav-menu {
+  color: #C07D64;
+  font-family: "Lato", sans-serif;
+  font-size: 1.5rem;
+}
+
+.nav-menu > *:hover {
+  color: #B9552D;
+}
+
+.nav-logo {
+  width: 5rem;
+}
+
+.nav-icon {
+  width: 2rem;
+}
+
+@media (max-width: 767px) {
+  .nav-social {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .navicon {
+    width: 1.125em;
+    height: .125em;
+  }
+  .navicon::before,
+  .navicon::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: all .4s ease-out;
+    content: '';
+    background: #B9552D;
+  }
+  .navicon::before {
+    top: 5px;
+  }
+  .navicon::after {
+    top: -5px;
+  }
+  .menu-btn:not(:checked) ~ .nav-menu {
+    display: none;
+  }
+  .menu-btn:checked ~ .nav-menu {
+    display: block;
+  }
+  .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+  .menu-btn:checked ~ .menu-icon .navicon::before {
+    transform: rotate(-45deg);
+  }
+  .menu-btn:checked ~ .menu-icon .navicon::after {
+    transform: rotate(45deg);
+  }
+  .menu-btn:checked ~ .menu-icon .navicon::before,
+  .menu-btn:checked ~ .menu-icon .navicon::after {
+    top: 0;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .menu {
+    margin-top: 70rem;
+  }
+}
+
+header {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-logo {
+  margin-top: 8rem;
+  width: 50rem;
+  align-self: center;
+  justify-self: center;
+}
+
+.contact {
+  width: 100%;
+  height: 40rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1100px) {
+  .contact {
+    flex-direction: column;
+    height: 90rem;
+  }
+}
+
+.contact-main {
+  width: 50%;
+  border-right: 1px dashed #B9552D;
+}
+
+@media screen and (max-width: 1100px) {
+  .contact-main {
+    width: 100%;
+    border-bottom: 1px dashed #B9552D;
+    border-right: none;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.contact-main-info {
+  display: flex;
+  margin-left: 2rem;
+  margin-top: 5rem;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (max-width: 1100px) {
+  .contact-main-info > * {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.contact-main-title {
+  color: #C07D64;
+  font-size: 2rem;
+  font-family: "IvyMode-Regular", sans-serif;
+  letter-spacing: .5rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .contact-main-title {
+    font-size: 1.5rem;
+  }
+}
+
+.contact-main-address, .contact-main-phone, .contact-main-email {
+  color: #EBE4DD;
+  font-family: "IvyMode-Regular", sans-serif;
+  letter-spacing: .3rem;
+}
+
+.contact-main-icon {
+  width: 3.5rem;
+}
+
+@media only screen and (max-width: 1100px) {
+  .contact-main-icon {
+    width: 2rem;
+    margin-right: 0;
+  }
+}
+
+.contact-main-flower {
+  width: 11rem;
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 1100px) {
+  .contact-main-flower {
+    margin-bottom: 2rem;
+    align-self: flex-start;
+  }
+}
+
+.contact-hours {
+  width: 50%;
+}
+
+@media screen and (max-width: 1100px) {
+  .contact-hours {
+    width: 100%;
+    height: 30rem;
+  }
+}
+
+.contact-hours-title {
+  color: #B9552D;
+  font-size: 1.4rem;
+  letter-spacing: .5rem;
+  font-family: "Lato", sans-serif;
+}
+
+.contact-hours-week, .contact-hours-sunday {
+  color: #EBE4DD;
+  font-family: "IvyMode-Regular", sans-serif;
+  letter-spacing: .3rem;
+}
+
+@media only screen and (max-width: 500px) {
+  .span {
+    margin-bottom: 1rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .span-week {
+    padding-left: 2rem;
+  }
+}
+
+.span-sunday {
+  padding-left: 14.5rem;
+}
+
+@media only screen and (max-width: 500px) {
+  .span-sunday {
+    padding-left: 6.5rem;
+  }
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #EBE4DD;
+  width: 100%;
+  height: 10rem;
+}
+
+.sliceCode {
+  width: 9rem;
+}
+
+#map {
+  width: 100%;
+  margin-top: 10rem;
+  height: 30rem;
+}
+
+@media screen and (max-width: 1100px) {
+  #map {
+    margin-top: 0;
+  }
+}
+/*# sourceMappingURL=main.css.map */

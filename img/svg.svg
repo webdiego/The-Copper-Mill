@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1062.988" height="1498.238" viewBox="0 0 1062.988 1498.238">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-5 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke: #b9552d;
+        stroke-width: 2px;
+      }
+
+      .cls-1 {
+        stroke-dasharray: 3 5;
+      }
+
+      .cls-2, .cls-3 {
+        stroke-dasharray: 5;
+      }
+
+      .cls-3 {
+        fill: rgba(255,255,255,0);
+      }
+
+      .cls-4 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="Component_13_1" data-name="Component 13 – 1" transform="translate(0 1.02)">
+    <g id="Ellipse_106" 
+    data-name="Ellipse 106" 
+    class="cls-1" transform="translate(549.275 105.022)">
+      <ellipse class="cls-4" cx="159.5" cy="165" rx="159.5" ry="165"/>
+      <ellipse class="cls-5" cx="159.5" cy="165" rx="158.5" ry="164"/>
+    </g>
+    <path id="Path_579" 
+    data-name="Path 579"
+     class="cls-2" 
+     d="M694.439,59.6S617.178-34.851,590.821,3.744c-16.334,23.918-27.554,66.23,0,99.013,71.568,85.15-98.423,116.787-98.423,116.787" transform="translate(367.775 5.522)"/>
+    <path 
+    id="Path_580" 
+    data-name="Path 580" 
+    class="cls-2" d="M-238.622-19.052S-141.044-62.573-62.283-71.4,59.831-62.367,76.424-54.372c54.761,26.385-19.22,210.179,102.151,168.85s78.531-243.9,223.557-243.1,309.409,103.146,356.549,246.3-125.1,397.011-125.1,397.011" 
+    transform="translate(712.452 672.28) rotate(90)"/>
+    <g 
+    id="Rectangle_20" 
+    data-name="Rectangle 20" class="cls-3" transform="matrix(0.669, 0.743, -0.743, 0.669, 186.529, 1131.394)">
+      <rect class="cls-4" width="229" height="251"/>
+      <rect class="cls-5" x="150" y="-50" width="227" height="249"/>
+    </g>
+  </g>
+</svg>

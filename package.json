@@ -1,0 +1,15 @@
+{
+  "name": "thecoppermill",
+  "version": "1.0.0",
+  "description": "Website for a Cafe in Sydney ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Diego Massarini",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "node-sass": "^4.14.1"
+  }
+}

@@ -1,0 +1,70 @@
+//Color
+$color-primary-blue : #393B4A;
+$color-primary-grey :#EBE4DD;
+$color-primary-orange :#B9552D;
+
+$color-secondary-blue:#3F4153; 
+$color-secondary-orange :#C07D64;
+
+
+//Tipography
+
+//Regular
+@font-face{
+  font-family : 'IvyMode-Regular';
+  src:
+  
+  url(../font/ivymode/woff2/IvyMode-Regular.woff2) format('woff2'),
+ 
+  url(../font/ivymode/woff/IvyMode-Regular.woff) format('woff'),
+ 
+  url(../font/ivymode/tff/IvyMode-Regular.ttf) format('truetype');
+       
+  font-weight: 600;
+
+ 
+};
+//BOLD
+@font-face{
+  font-family : 'IvyMode-Bold';
+  src:
+  
+  url(../font/ivymode/woff2/IvyMode-Bold.woff2) format('woff2'),
+
+  url(../font/ivymode/woff/IvyMode-Bold.woff) format('woff'),
+ 
+  url(../font/ivymode/tff/IvyMode-Bold.ttf) format('truetype');
+     
+  font-weight: 800;
+
+};
+
+
+
+$font-primary-regular : 'IvyMode-Regular',sans-serif; 
+$font-primary-bold : 'IvyMode-Bold',sans-serif;
+$font-secondary: 'Lato', sans-serif;
+
+
+
+
+
+
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  
+}
+
+body{
+  font-size: 62,5%;
+  font-family: $font-secondary;
+  background-color: $color-primary-blue;
+ 
+}
+
+
