@@ -343,6 +343,10 @@ body {
   }
 }
 
+.agfg {
+  width: 3.5rem;
+}
+
 @media screen and (max-width: 900px) {
   .menu {
     margin-top: 70rem;
