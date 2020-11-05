@@ -8,7 +8,7 @@ let philoLeft = document.querySelector('.philo-left')
 let philoImgRight = document.querySelector('.philo-right-img')
 
 
-if(width<900){
+const restylePhilosophy = ()=>{
   philoImgRight.parentNode.removeChild(philoImgRight)
   philoLeft.innerHTML =
   `<div class="philo-left-img">
@@ -18,17 +18,18 @@ if(width<900){
  </div>`
 }
 
+
+//WIdth minus than 900px
+if(width<900){
+  restylePhilosophy()
+}
+
+
+//
 window.onresize =(e) =>{
  if (e.target.matchMedia(("max-width: 900px"))){
 
-   
-   philoImgRight.remove()
-   philoLeft.innerHTML =
-   `<div class="philo-left-img">
-   <img data-aos="zoom-in" data-aos-delay="90" class="philo-left-img-1" src="./img/img-1.jpg" alt="the copper mill best dish">
-   <img data-aos="zoom-in" data-aos-delay="80" class="philo-left-img-2" src="./img/img-2.png" alt="he Copper Mill coffee - Alexandria , Sydney (Australia)">
-   <img data-aos="zoom-in" data-aos-delay="80" class="philo-left-img-3" src="./img/img-3.png" alt="the copper mill dishes">
-  </div>`
+   restylePhilosophy()
  } 
 
 }
