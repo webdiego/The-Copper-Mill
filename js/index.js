@@ -1,50 +1,15 @@
 
-const width = window.innerWidth;
-
-let philoRight = document.querySelector('.philo-right')
-
-let philoLeft = document.querySelector('.philo-left')
-
-let philoImgRight = document.querySelector('.philo-right-img')
-
-
-const restylePhilosophy = ()=>{
-  philoImgRight.parentNode.removeChild(philoImgRight)
-  philoLeft.innerHTML =
-  `<div class="philo-left-img">
-  <img data-aos="zoom-in" data-aos-delay="90" class="philo-left-img-1" src="./img/img-1.jpg" alt="the copper mill best dishthe copper mill best dish">
-  <img data-aos="zoom-in" data-aos-delay="80" class="philo-left-img-2" src="./img/img-2.png" alt="he Copper Mill coffee - Alexandria , Sydney (Australia)">
-  <img data-aos="zoom-in" data-aos-delay="80" class="philo-left-img-3" src="./img/img-3.png" alt="the copper mill dishes">
- </div>`
-}
-
-
-//WIdth minus than 900px
-if(width<900){
-  restylePhilosophy()
-}
-
-
-//
-window.onresize =(e) =>{
- if (e.target.matchMedia(("max-width: 900px"))){
-
-   restylePhilosophy()
- } 
-
-}
-
-
 //GOOGLE MAP
-var script = document.createElement('script');
-script.src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyB0JcL_EiEModoJKJplqyJaDqhvBHn7hRA&callback=initMap&libraries=&v=weekly";
+var script = document.createElement("script");
+script.src =
+  "https://maps.googleapis.com/maps/api/js?key=AIzaSyB0JcL_EiEModoJKJplqyJaDqhvBHn7hRA&callback=initMap&libraries=&v=weekly";
 script.defer = true;
 
 let map;
 
 function initMap() {
-  const myLatLng = { lat: -33.906181, lng: 151.188675 }
- const  map = new google.maps.Map(document.getElementById("map"), {
+  const myLatLng = { lat: -33.906181, lng: 151.188675 };
+  const map = new google.maps.Map(document.getElementById("map"), {
     center: myLatLng,
     zoom: 15,
     styles: [
@@ -127,8 +92,6 @@ function initMap() {
         stylers: [{ color: "#17263c" }],
       },
     ],
- 
-
   });
 
   new google.maps.Marker({
@@ -136,11 +99,7 @@ function initMap() {
     map,
     title: "The Copper Mill",
     zoomControl: false,
-
-    
   });
-  
-  
 }
 
 document.head.appendChild(script);

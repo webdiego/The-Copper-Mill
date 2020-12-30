@@ -2,238 +2,56 @@
  
   margin-top: 8rem;
   width: 100%;
-  height: 100rem;
-  background: url(../img/bg-3.png);
+  height: 100%;
+  background: url(../img/bg--.svg);
   
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
    
-
-  @media screen and (max-width:900px) {
-    background: none;
-    margin-top: 12rem;
-    
-  }
-
-  &-right{
-    display: flex;
-    flex-wrap: wrap;
- 
-    @media screen and (max-width:1100px) {
-      
-      display: flex;
-      flex-direction: column;
-    flex-wrap: wrap;
-     }
-    @media (min-width:500px) and (max-width:899px) {
-      
-    height: 35rem;
-     }
-    @media (max-width:499px)  {
-      
-     height: 60rem;
-    }
-    
-    &-img{
-  
-    &-1{
-      width: 25rem;
-      position: absolute;
-      top: 26%;
-      left: 9%;
-
-
-      @media (min-width:1100px)  {
-        width: 25rem;
-        top: 19%;
-      
-         }
-    }
-    }
-
-    
-  }
-
   &-description{
     
-    position: absolute;
-    width: 50%;
-    right: 0%;
-    margin-top: 5rem;
+    text-align: center;
+     width: 70%;
+    background-color:#393b4abf;
+    @media screen and (max-width:499px) {   
+      width: 90%;
+    }
+    @media (min-width:600px) and (max-width:1000px) {
+      width: 70%;
 
-    @media (min-width:901px) and (max-width:1100px) {
-      
-    
-     padding: 1rem ;
-     
     }
 
-    @media screen and (max-width:900px) {
-      margin: 0;
-     width: 100%;
-     padding: 5rem;
-     left: 0%;
-    
-  }
-
-  @media screen and (max-width:900px) {
-   
-   padding: 2rem;
-   
-  
-}
   }
   &-title{
     color: $color-secondary-orange;
-    font-size: 2rem;
+    font-size: 2.4rem;
     font-family: $font-primary-regular;
     letter-spacing: .5rem;
-    text-align: right;
-    padding-right: 4rem;
+    
 
-    @media (min-width:501px) and (max-width:900px) {
-      font-size: 1.8rem;
-      text-align: left;
-      padding-left: 2rem;
-
-
-     
-    }
-    @media screen and (max-width:500px) {
-      font-size: 1.5rem;
-      text-align: left;
     
     }
-   
-  }
-
+    
   &-story{
   font-family: $font-secondary;
   color: $color-primary-grey;
   letter-spacing: .2rem;
   line-height: 3rem;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
+  margin:  5rem 0;
 
-  @media (min-width:901px) and (max-width:1100px) {
-      
-    line-height: 2.3rem;
-   padding: 2rem;
-    font-size: 1.1rem;
-  }
-
-  @media (min-width:500px) and (max-width:900px) {
-      
-    line-height: 3rem;
-   padding: 2rem;
-    font-size: 1.1rem;
-  }
-  @media screen and (max-width:499px) {
-      
+  
+  @media screen and (max-width:499px) {   
     line-height: 2.5rem;
-   
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
-  
 
   }
-  
-
-
-}
-
-//left side 
-.philo-left{
- display: flex;
- height: 100rem;
- background: none;
- @media screen and (max-width:900px) {
-
-  background: url(../img/mobile.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  }
-  @media (min-width:500px) and (max-width:900px) {
-
-    height: 140rem;
-    }
   &-img{
-    
-    &-2{
-    position: absolute;
-    top: 65%;
-    left: 10%;
-    width : 25rem;
-
-    @media (min-width:900px) and (max-width:1100px) {
-      width: 20rem;
-      top: 60%;
-         
-      }
-
-
-      @media (min-width:500px) and (max-width:900px) {
-       top: 103%;
-       
-        }
-        @media (min-width:600px) and (max-width:900px) {
-          top: 103%;
-              left: 28%;
-           }
-      @media screen and (max-width:500px) {
-        
-     
-        width: 18rem;
-        top: 108%;
-        
-        }
-    }
-
-   &-3{
-     width: 25rem;
-     top: 75%;
-     left: 65%;
-     position: absolute;
-    
-
-     @media (min-width:900px) and (max-width:1100px) {
-      width: 18rem;
-      top: 70%;
-         
-      }
-
-      @media (min-width:500px) and (max-width:900px) {
-        top: 135%;
-     left: 10%;
-            
-         }
-      @media screen and (max-width:500px) {
-       
-        width: 18rem;
-        top: 140%;
-        left: 12%;
-        }
-    }
-   }
-}
-
-//First img that show only in mobile using JS
-.philo-left-img-1{
-  width: 18rem;
-  position: absolute;
-  top: 74%;
-  left: 10%;
-
-  @media (min-width:500px) and (max-width:899px) {
-    width: 24rem;
-    top: 75%;
-    left: 15%;
-}
-@media screen and (max-width:499px)  {
-  width: 20rem;
-  top: 79%;
-   left: 13%;
-}
+  margin-bottom: 4rem;
+  }
 }
 

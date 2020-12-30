@@ -1,0 +1,19 @@
+<svg id="bg--" xmlns="http://www.w3.org/2000/svg" width="642" height="647" viewBox="0 0 642 647">
+  <rect id="Rectangle_26" data-name="Rectangle 26" width="642" height="647" fill="#393b4a"/>
+  <line id="Line_10" data-name="Line 10" y1="80.1" x2="64.126" transform="matrix(-0.105, -0.995, 0.995, -0.105, 167.312, 574.055)" fill="none" stroke="#dcb9a5" stroke-linecap="round" stroke-width="3"/>
+  <line id="Line_11" data-name="Line 11" y1="2.535" x2="61.064" transform="translate(149.407 505.066) rotate(-145)" fill="none" stroke="#dcb9a5" stroke-linecap="round" stroke-width="3"/>
+  <line id="Line_12" data-name="Line 12" y1="0.913" x2="21.983" transform="translate(82.391 460.246) rotate(-145)" fill="none" stroke="#dcb9a5" stroke-linecap="round" stroke-width="3"/>
+  <line id="Line_29" data-name="Line 29" x1="31.553" y1="18.717" transform="translate(376.673 59.001)" fill="none" stroke="rgba(220,185,165,0.45)" stroke-linecap="round" stroke-width="3"/>
+  <line id="Line_41" data-name="Line 41" x1="7.282" y1="28.565" transform="translate(143.813 190.672)" fill="none" stroke="#dcb9a5" stroke-linecap="round" stroke-width="2"/>
+  <line id="Line_42" data-name="Line 42" y1="87.614" x2="69.467" transform="translate(468.182 360.919) rotate(-64)" fill="none" stroke="#dcb9a5" stroke-linecap="round" stroke-width="3"/>
+  <line id="Line_43" data-name="Line 43" y1="3.065" x2="66.53" transform="translate(490.829 287.418) rotate(-113)" fill="none" stroke="#dcb9a5" stroke-linecap="round" stroke-width="3"/>
+  <path id="Polygon_8" data-name="Polygon 8" d="M7,0l7,12.5L7,25,0,12.5Z" transform="matrix(0.996, 0.087, -0.087, 0.996, 395.045, 591.481)" fill="rgba(192,125,100,0.77)"/>
+  <path id="Polygon_9" data-name="Polygon 9" d="M7,0l7,12.5L7,25,0,12.5Z" transform="translate(348.157 153.671) rotate(-131)" fill="rgba(212,156,135,0.8)"/>
+  <line id="Line_44" data-name="Line 44" x1="1.758" y1="54.395" transform="translate(583.81 494.769)" fill="none" stroke="#dcb9a5" stroke-linecap="round" stroke-width="3"/>
+  <path id="Polygon_13" data-name="Polygon 13" d="M8,0l8,14L8,28,0,14Z" transform="translate(581.784 80.823) rotate(32)" fill="rgba(192,125,100,0.53)"/>
+  <line id="Line_45" data-name="Line 45" y1="46.961" x2="26.634" transform="matrix(0.951, 0.309, -0.309, 0.951, 48.556, 45.75)" fill="none" stroke="#dcb9a5" stroke-linecap="round" stroke-width="3"/>
+  <line id="Line_46" data-name="Line 46" y1="6.42" x2="31.522" transform="translate(85.271 37.558) rotate(-31)" fill="none" stroke="#dcb9a5" stroke-linecap="round" stroke-width="3"/>
+  <path id="Polygon_14" data-name="Polygon 14" d="M7,0l7,12.5L7,25,0,12.5Z" transform="translate(30.867 275.148) rotate(171)" fill="rgba(212,156,135,0.49)"/>
+  <path id="Polygon_15" data-name="Polygon 15" d="M11.5,0,23,22,11.5,44,0,22Z" transform="matrix(-0.292, -0.956, 0.956, -0.292, 35.681, 631.93)" fill="#c07d64"/>
+  <path id="Polygon_16" data-name="Polygon 16" d="M7,0l7,12.5L7,25,0,12.5Z" transform="translate(319.012 366.421) rotate(160)" fill="rgba(212,156,135,0.2)"/>
+</svg>
