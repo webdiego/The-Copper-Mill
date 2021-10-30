@@ -13,7 +13,8 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   scroll-behavior: smooth;
 }
 
@@ -28,9 +29,15 @@ body {
   width: 100%;
   height: 100%;
   background: url(../img/bg--.svg);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
 }
 
@@ -80,6 +87,7 @@ body {
 }
 
 .nav {
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   border-bottom: 1px dashed #C07D64;
@@ -122,6 +130,7 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
+    -webkit-transition: all .4s ease-out;
     transition: all .4s ease-out;
     content: '';
     background: #B9552D;
@@ -142,10 +151,12 @@ body {
     background: transparent;
   }
   .menu-btn:checked ~ .menu-icon .navicon::before {
-    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
   }
   .menu-btn:checked ~ .menu-icon .navicon::after {
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
   }
   .menu-btn:checked ~ .menu-icon .navicon::before,
   .menu-btn:checked ~ .menu-icon .navicon::after {
@@ -157,32 +168,51 @@ body {
   width: 3.5rem;
 }
 
+.menu {
+  background: url(../img/bg--.svg);
+}
+
 header {
   width: 100%;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .main-logo {
   margin: 13rem 0;
   width: 50rem;
-  align-self: center;
-  justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
 .contact {
   width: 100%;
   height: 40rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-top: 4rem;
 }
 
 @media screen and (max-width: 1100px) {
   .contact {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     height: 90rem;
   }
 }
@@ -197,24 +227,43 @@ header {
     width: 100%;
     border-bottom: 1px dashed #B9552D;
     border-right: none;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
 .contact-main-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-left: 2rem;
   margin-top: 5rem;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media (max-width: 1100px) {
   .contact-main-info > * {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     text-align: center;
   }
 }
@@ -257,7 +306,8 @@ header {
 @media screen and (max-width: 1100px) {
   .contact-main-flower {
     margin-bottom: 2rem;
-    align-self: flex-start;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
   }
 }
 
@@ -308,10 +358,19 @@ header {
 }
 
 .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: #EBE4DD;
   width: 100%;
   height: 10rem;
